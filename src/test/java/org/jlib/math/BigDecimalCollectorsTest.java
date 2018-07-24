@@ -21,41 +21,41 @@
 
 package org.jlib.math;
 
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
+import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 import static java.math.BigDecimal.ONE;
 import static java.math.BigDecimal.ZERO;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.jlib.math.BigDecimalCollectors.summing;
-import org.junit.Test;
 
 public class BigDecimalCollectorsTest {
 
     @Test
     public void summingEmptyStream() {
-        assertThat(Stream.<BigDecimal> empty().collect(summing()))
-            .isEqualTo(ZERO);
+        assertThat(Stream.<BigDecimal>empty().collect(summing()))
+                .isEqualTo(ZERO);
     }
 
     @Test
     public void summingSingleItem() {
         assertThat(Stream.of(ONE).collect(summing()))
-            .isEqualTo(ONE);
+                .isEqualTo(ONE);
     }
 
     @Test
     public void summingOneToTen() {
         assertThat(IntStream.rangeClosed(1, 10).mapToObj(BigDecimal::valueOf).collect(summing()))
-            .isEqualTo(BigDecimal.valueOf(55));
+                .isEqualTo(BigDecimal.valueOf(55));
     }
 
     @Test
     public void summingx() {
         assertThat(Stream.of(ONE, BigDecimal.valueOf(2), BigDecimal.valueOf(3))
-                         .collect(summing()))
-            .isEqualTo(BigDecimal.valueOf(6));
+                .collect(summing()))
+                .isEqualTo(BigDecimal.valueOf(6));
     }
 }
