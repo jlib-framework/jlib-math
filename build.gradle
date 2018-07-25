@@ -30,4 +30,3 @@ plugins {
 }
 
 apply from: 'jlib.gradle'
-
