@@ -19,18 +19,16 @@
  *     limitations under the License.
  */
 
-package org.jlib.math;
-
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
-
-import java.math.BigDecimal;
+package org.jlib.numeric;
 
 import lombok.experimental.UtilityClass;
 
-@UtilityClass
-public class BigDecimalCollectors {
+import java.math.BigDecimal;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
+@UtilityClass
+public class BigDecimals {
     public static Collector<BigDecimal, ?, BigDecimal> summing() {
         return Collectors.reducing(BigDecimal.ZERO, BigDecimal::add);
     }

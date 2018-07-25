@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/jlib-math.iml" filepath="$PROJECT_DIR$/jlib-math.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jlib-math_main.iml" filepath="$PROJECT_DIR$/.idea/modules/jlib-math_main.iml" group="jlib-math" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jlib-math_test.iml" filepath="$PROJECT_DIR$/.idea/modules/jlib-math_test.iml" group="jlib-math" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jlib-numeric.iml" filepath="$PROJECT_DIR$/.idea/modules/jlib-numeric.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jlib-numeric_main.iml" filepath="$PROJECT_DIR$/.idea/modules/jlib-numeric_main.iml" group="jlib-numeric" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jlib-numeric_test.iml" filepath="$PROJECT_DIR$/.idea/modules/jlib-numeric_test.iml" group="jlib-numeric" />
     </modules>
   </component>
 </project>

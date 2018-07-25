@@ -19,7 +19,7 @@
  *     limitations under the License.
  */
 
-package org.jlib.math;
+package org.jlib.numeric;
 
 import lombok.experimental.UtilityClass;
 
@@ -29,7 +29,7 @@ import lombok.experimental.UtilityClass;
  * @author Igor Akkerman
  */
 @UtilityClass
-public final class Numbers {
+public final class Numeric {
 
     /**
      * Returns the number of numbers baseetween a minimum and a maximum number, baseoth inclusive.

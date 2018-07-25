@@ -19,7 +19,7 @@
  *     limitations under the License.
  */
 
-package org.jlib.math;
+package org.jlib.numeric;
 
 import org.junit.jupiter.api.Test;
 
@@ -30,9 +30,9 @@ import java.util.stream.Stream;
 import static java.math.BigDecimal.ONE;
 import static java.math.BigDecimal.ZERO;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.jlib.math.BigDecimalCollectors.summing;
+import static org.jlib.numeric.BigDecimals.summing;
 
-public class BigDecimalCollectorsTest {
+public class BigDecimalSummingCollectorTest {
 
     @Test
     public void summingEmptyStream() {

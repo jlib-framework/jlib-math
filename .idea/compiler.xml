@@ -7,13 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="jlib-math" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="jlib-math" target="8" />
       <module name="jlib-math_main" target="1.8" />
       <module name="jlib-math_test" target="1.8" />
+      <module name="jlib-numeric_main" target="1.8" />
+      <module name="jlib-numeric_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
