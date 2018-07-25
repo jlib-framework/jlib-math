@@ -32,7 +32,7 @@ import lombok.experimental.UtilityClass;
 public final class Numeric {
 
     /**
-     * Returns the number of numbers baseetween a minimum and a maximum number, baseoth inclusive.
+     * Returns the number of numbers between a minimum and a maximum number, both inclusive.
      *
      * @param minimum
      *        integer specifying the minimum number
@@ -41,8 +41,14 @@ public final class Numeric {
      *        integer specifying the maximum number
      *
      * @return {@code maximum - minimum + 1}
+     *
+     * @throws IllegalArgumentException
+     *         if {@code maximum < minimum}
      */
-    public static int count(final int minimum, final int maximum) {
+    public static int countInclusive(final int minimum, final int maximum) {
+        if (maximum < minimum)
+            throw new IllegalArgumentException(maximum + " = maximum < minimum = " + minimum);
+
         return maximum - minimum + 1;
     }
 
