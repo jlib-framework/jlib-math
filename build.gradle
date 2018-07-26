@@ -29,4 +29,9 @@ plugins {
     id 'net.researchgate.release' version '2.6.0'
 }
 
+version = '1.0.0-SNAPSHOT'
+
+description = 'jlib operations on numbers'
+ext.detailedDescription = 'jlib operations on numbers'
+
 apply from: 'jlib.gradle'

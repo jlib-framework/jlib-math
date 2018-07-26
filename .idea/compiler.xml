@@ -10,6 +10,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="jlib-_main" target="1.8" />
+      <module name="jlib-_test" target="1.8" />
       <module name="jlib-math" target="8" />
       <module name="jlib-math_main" target="1.8" />
       <module name="jlib-math_test" target="1.8" />
